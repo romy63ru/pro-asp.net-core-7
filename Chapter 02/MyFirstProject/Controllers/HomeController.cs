@@ -13,9 +13,15 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public  ViewResult Index()
     {
-        return View();
+        var hours = DateTime.Now.Hour;
+        string viewModel = "Good Evening";
+        if(hours<12) {
+            viewModel = "GoodMorning";
+        }
+
+        return View("MyView", viewModel);
     }
 
     public IActionResult Privacy()
