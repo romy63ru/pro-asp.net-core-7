@@ -1,0 +1,9 @@
+dotnet new globaljson --sdk-version 7.0.100 --output MyFirstProject 
+dotnet new mvc --no-https --output MyFirstProject --framework net7.0
+dotnet new sln -o MyFirstProject
+dotnet sln FirstProject add MyFirstProject
+
+Excerpt From
+Pro ASP.NET Core 7, Tenth Edition
+Adam Freeman
+This material may be protected by copyright.
